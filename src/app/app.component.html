@@ -1,0 +1,6 @@
+<form [formGroup]="signInForm" (ngSubmit)="onSubmit(signInForm.value)">
+  <input type="email" formControlName="email" id="email"/>
+  <app-file-upload formControlName="file"></app-file-upload>
+  <app-form-submit-group></app-form-submit-group>
+</form>
+
